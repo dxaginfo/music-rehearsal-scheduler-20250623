@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      dockerfile: Dockerfile.dev
+    environment:
+      - NODE_ENV=development
+    command: npm start
+
+  backend:
+    build:
+      dockerfile: Dockerfile.dev
+    environment:
+      - NODE_ENV=development
+    command: npm run dev
